@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {ProfileAvatar, Description, AvatarImg, ParName, ParTag, ParLocation, ProfileStats, StatsLabel, StatsQuantity} from './Profile.module.jsx';
+import {ProfileAvatar, Description, AvatarImg, ParName, ParTag, ParLocation, ProfileStats, StatsLabel, StatsQuantity} from './Profile.styled.jsx';
 
 export const Profile = ({username, tag, location, avatar, stats:{followers,views,likes}}) => {
     return (

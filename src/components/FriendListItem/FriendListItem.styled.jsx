@@ -9,13 +9,12 @@ padding: 10px;
   align-items: center;
 `
 export const SpanStatus = styled.span`
-/*osition: absolute;*/
     display: flex;
 
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background-color: green;
+  background-color: ${props => (props.statusType ? 'green' : 'red')};
 `
 export const ImgAvatar = styled.img`
 

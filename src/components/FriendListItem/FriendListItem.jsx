@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
-import { ItemLi, SpanStatus, ImgAvatar, ParName } from "./FriendListItem.module";
+import { ItemLi, SpanStatus, ImgAvatar, ParName } from "./FriendListItem.styled";
 
-export const FriendListItem = ({status, avatar, name}) => {
+export const FriendListItem = ({isOnline, status, avatar, name}) => {
     return (
         <ItemLi>
-            <SpanStatus>{status}</SpanStatus>
+            <SpanStatus statusType={isOnline}>{status}</SpanStatus>
             <ImgAvatar src={avatar} alt="User avatar" width="48" />
             <ParName>{name}</ParName>
         </ItemLi>

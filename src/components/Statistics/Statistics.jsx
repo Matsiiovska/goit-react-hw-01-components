@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { SectionStatistics, ZagTitle, StatList, ItemLi, SpanLabel, SpanPerc } from "./Statistics.module";
+import { SectionStatistics, ZagTitle, StatList, ItemLi, SpanLabel, SpanPerc } from "./Statistics.styled";
 import getRandomHexColor from "./GetRandomColor";
 
 export const Statistics = ({ title, stats}) => {
